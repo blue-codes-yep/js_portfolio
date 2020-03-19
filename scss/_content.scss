@@ -1,0 +1,25 @@
+@mixin flexCenter($direction) {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+   
+}
+
+// @mixin borderBox() {
+//     background: rgba(255,255,255,0.3)
+// }
+
+.content {
+    @include flexCenter(column);
+    background: url('/dist/img/milky-way-3840x2160-stars-4k-20311.jpg') no-repeat bottom center;
+    background-size: cover;
+    padding: 0 10vw;
+    color: #fff;
+}
+
+.description {
+    @include flexCenter(column);
+    height: 0vh;
+}
